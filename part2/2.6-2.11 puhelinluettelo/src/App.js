@@ -48,28 +48,22 @@ const App = () => {
   const [newFilter, setNewFilter] = useState('')
 
   useEffect(() => {
-    console.log('effect')
     axios
       .get('http://localhost:3001/persons')
       .then(response => {
-        console.log('promise fulfilled')
         setPersons(response.data)
       })
   }, [])
-  console.log('render', persons.length, 'notes')
 
   const handleNameChange = (event) => {
-    console.log(event.target.value)
     setNewName(event.target.value)
   }
 
   const handleFilterChange = (event) => {
-    console.log(event.target.value)
     setNewFilter(event.target.value)
   }
 
   const handleNumberChange = (event) => {
-    console.log(event.target.value)
     setNewNumber(event.target.value)
   }
 
@@ -89,6 +83,7 @@ const App = () => {
   
     setPersons(persons.concat(nameObject))
     setNewName('')
+    setNewNumber('')
     }
   }
 
