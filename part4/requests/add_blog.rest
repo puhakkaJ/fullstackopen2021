@@ -1,0 +1,10 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFBQUFBQSIsImlkIjoiNjA4NDI3MmYwYzRmYzg0YmUxYzZkNzBjIiwiaWF0IjoxNjE5MzU4MTU0LCJleHAiOjE2MTkzNjE3NTR9.nmtBRcEMlMtvxsI_em3ZItq6sveCTa43qRq0Uh73YmQ
+
+{ 
+    "title": "kokueilii",
+    "author": "toimkkiiko",
+    "url": "kdjnnnood",
+    "likes": 4
+}

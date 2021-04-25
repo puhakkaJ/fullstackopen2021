@@ -1,0 +1,9 @@
+PUT http://localhost:3003/api/blogs/608344140c25ad4624216dbc
+Content-Type: application/json
+
+{
+    "title": "muokataan",
+    "author": "ms muokkaaja",
+    "url": "www.muokkaus.fi",
+    "likes": 78
+}
